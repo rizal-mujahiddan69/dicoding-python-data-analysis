@@ -656,6 +656,19 @@ order_review_df_ana.columns = ["Mean_Review_Score"]
 # ## Visualization & Explanatory Analysis
 
 # %% [code] {"execution":{"iopub.status.busy":"2023-11-11T02:52:39.404444Z","iopub.execute_input":"2023-11-11T02:52:39.404905Z","iopub.status.idle":"2023-11-11T02:52:42.193211Z","shell.execute_reply.started":"2023-11-11T02:52:39.404864Z","shell.execute_reply":"2023-11-11T02:52:42.192300Z"}}
+
+# sns.barplot(
+#     data=total_order_product[:10], x="order_item_id", y="product_category_name"
+# )
+# axs.set(title="10 Kategori Produk yang Laku terjual")
+
+st.title("10 Kategori Produk yang Laku terjual")
+fig = plt.figure()
+sns.barplot(data=total_order_product[:10], x="order_item_id", y="product_category_name")
+st.pyplot(fig)
+# axs
+# plt.show()
+
 peta_brazil = requests.get(
     "https://raw.githubusercontent.com/codeforgermany/click_that_hood/c920849a080627b584e139556ac009a509e73998/public/data/brazil-states.geojson"
 ).json()
