@@ -702,12 +702,11 @@ st.title("Banyaknya Penjual di suatu daerah")
 mpinku = folium_static(m_pin, width=800)
 # mpinku
 
+# st.markdown(
+#     """
+# # Kesimpulan
 
-st.markdown(
-    """
-# Kesimpulan
-
-* Lebih Banyak Penjualan berdasarkan Customer di Bagian Rio de Janiero, San Paulo, Minas Greais
-* Lebih Penjual di sekitar pantai di negara Brazil. dan biasanya ada di Rio de Janiero , San Paulo, dan Minas Greais
-* Berarti persebaran Penjual dan Pembeli tepat karena banyaknya wilayah penjual dan pembeli sama."""
-)
+# * Lebih Banyak Penjualan berdasarkan Customer di Bagian Rio de Janiero, San Paulo, Minas Greais
+# * Lebih Penjual di sekitar pantai di negara Brazil. dan biasanya ada di Rio de Janiero , San Paulo, dan Minas Greais
+# * Berarti persebaran Penjual dan Pembeli tepat karena banyaknya wilayah penjual dan pembeli sama."""
+# )
